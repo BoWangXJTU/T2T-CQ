@@ -1,5 +1,5 @@
 
-# classify and bin HiFi reads
+# Classify and bin HiFi reads
 yak triobin pat.yak mat.yak child_HiFi_Reads.gz > triobin.out
 
 awk '$2=="p"||$2=="a"||$2==0' triobin.out |cut -f 1 > pat.read.list
