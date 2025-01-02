@@ -1,2 +1,2 @@
-# Telomere-to-telomere of ChineseQuartet (CQ)
+# Telomere-to-telomere genome assemblies of ChineseQuartet (CQ)
 
