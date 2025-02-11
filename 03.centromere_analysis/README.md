@@ -32,3 +32,7 @@ censtats length --input stv_mat_raw.bed --bp_jump_thr 100000 --arr_len_thr 30000
 
 Rscript HOR_length_plot.R --input GPB_102samples-HORlength.txt --input_A stv_CQv3.0_mat_HORlength.txt --input_B stv_CQv3.0_pat_HORlength.txt
 
+# Plot stv HOR annotations
+
+Rscript plot_cens_stvHOR_update_v3.R -i chm13.stv_raw.bed --input1 CQ_mat.stv_raw.bed --input2 CQ_pat.stv_raw.bed -c chrX -o plot_stvHOR_chm13-cqmat-cqpat_sort_resize.pdf --plot_width 5 --plot_height 12
+
