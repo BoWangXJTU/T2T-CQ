@@ -33,3 +33,7 @@ bash automated-polishing.sh 36 1 ../draft/cq_t2t_genome_draft.fa pat.hifi.fasta 
 
 samtools index -@ 24 racon.meryl.iter_1.winnowmap.sorted.bam
 nextPolish2 -t 48 -r racon.meryl.iter_1.winnowmap.sorted.bam ../draft/cq_t2t_genome_draft.fa sr.k21.yak sr.k31.yak -o ../draft/cq_t2t_genome_draft.np2.fa
+
+# Find and correct the SV-like errors
+
+To identify and correct potential SV errors, we implemented the “Find SV-like errors” step from the T2T polishing pipeline (https://github.com/arangrhie/T2T-Polish/blob/4b5c446789dc26198bda9c3d2cfa16484b0008cb/doc/T2T_polishing_case_study.md) to refine our genome assembly. 
